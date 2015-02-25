@@ -1,0 +1,61 @@
+% Author: Alberto Santini <a.santini@unibo.it>
+
+\documentclass[12pt]{report}
+
+\usepackage[top=3cm,bottom=3cm,left=3cm,right=3cm]{geometry}
+\usepackage[bookmarks=false,colorlinks=false]{hyperref}
+\usepackage[toc,page]{appendix}
+\usepackage[medium]{titlesec}
+\usepackage[all]{background}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{subcaption}
+\usepackage{bold-extra}
+\usepackage{amsfonts}
+\usepackage{eso-pic}
+\usepackage{parskip}
+\usepackage{amsmath}
+\usepackage{lmodern}
+\usepackage{natbib}
+\usepackage{tikz}
+
+% TECH REPORT NUMBER
+\newcommand{\TechReportNumber}{001/2015}
+% TECH REPORT TITLE
+\title{Example of a Technical Report}
+% TECH REPORT AUTHOR
+\author{Fabio Bianchi, Mario Rossi, Giuseppe Verdi}
+% TECH REPORT DATE
+\date{\today}
+
+% PAGE HEADER
+\input{./figures/or_logo.tex}
+\SetBgContents{\ORlogo}
+\SetBgPosition{current page.north west}
+\SetBgScale{0.4}
+\SetBgAngle{0.0}
+
+% CHAPTER, SECTION HEADERS
+\titleformat{\chapter}{\scshape\Huge}{\thechapter}{0.5em}{}
+\titleformat{\section}{\scshape\Large\vspace{-0.3em}}{\thesection}{0.3em}{}[\titlerule]
+
+\begin{document}
+  
+% PRINT THE TITLE PAGE
+\input{./title.tex}
+
+% PRINT THE TOC
+\tableofcontents
+
+% ALLOW ALIGN TO BREAK PAGES
+% \allowdisplaybreaks
+
+% YOUR TECH REPORT STARTS HERE
+
+\input{./chapters/1_chapter_example.tex}  
+
+% BIBLIOGRAPHY
+\bibliographystyle{plainnat}
+\bibliography{report}
+\end{document}

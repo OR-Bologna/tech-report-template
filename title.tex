@@ -1,0 +1,36 @@
+\newcommand{\BolognaBackgroundPic}{%
+  \put(0,0){%
+    \parbox[b][\paperheight]{\paperwidth}{%
+      \vspace{45em}\centering
+      % Original picture:
+      % https://commons.wikimedia.org/wiki/File:Bologna-SanPetronioPiazzaMaggiore1.jpg
+      % Distributed by the author under the GNU FDL v1.2 and Creative Commons Attribution-Share Alike 3.0
+      \includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{./figures/bologna_strip.png}\vfill
+    }
+  }
+}
+
+\newgeometry{top=2.4cm,bottom=2.4cm,left=2.4cm,right=2.4cm}
+\makeatletter
+
+\begin{titlepage}
+  \AddToShipoutPicture*{\BolognaBackgroundPic}
+  
+  \begin{center}
+      \vspace*{1em}
+      \includegraphics[height=6em,keepaspectratio]{./figures/unibo_logo.png}\\
+      %{\scshape\small Electric, Electronic and Information Engineering Department}\\[2em]
+      \vspace{10em}
+      {\sffamily\Huge \@title}\\[2em]
+      {\sffamily Technical Report \TechReportNumber}\\[4em]
+      {\sffamily\Large \@author}\\[2em]
+      {\sffamily \@date}
+      \begin{tikzpicture}[overlay, remember picture]
+        \fill[black,opacity=0.5] (-13,-10.04) rectangle (10,-8.04);
+        \node[color=white] at (4,-9.04) {\sffamily {\Huge OR@unibo}~~~~Operational Research Group};
+      \end{tikzpicture}
+  \end{center}
+\end{titlepage}
+
+\makeatother
+\restoregeometry
