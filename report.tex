@@ -29,12 +29,9 @@
 % TECH REPORT DATE
 \date{\today}
 
-% PAGE HEADER
+% PAGE HEADER (empty on title page)
 \input{./figures/or_logo.tex}
-\SetBgContents{\ORlogo}
-\SetBgPosition{current page.north west}
-\SetBgScale{0.4}
-\SetBgAngle{0.0}
+\SetBgContents{}
 
 % CHAPTER, SECTION HEADERS
 \titleformat{\chapter}{\scshape\Huge}{\thechapter}{0.5em}{}
@@ -44,6 +41,12 @@
   
 % PRINT THE TITLE PAGE
 \input{./title.tex}
+
+% SET PAGE HEADER
+\SetBgContents{\ORlogo}
+\SetBgPosition{current page.north west}
+\SetBgScale{0.4}
+\SetBgAngle{0.0}
 
 % PRINT THE TOC
 \tableofcontents
