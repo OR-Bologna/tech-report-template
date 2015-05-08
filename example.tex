@@ -1,3 +1,50 @@
+% Author: Alberto Santini <a.santini@unibo.it>
+
+\documentclass[12pt]{orbotech}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{natbib}
+
+\reportnumber{001/2015}
+\title{Example of a Technical Report}
+\author{Fabio Bianchi, Mario Rossi, Giuseppe Verdi}
+\date{\today}
+
+\begin{filecontents}{example.bib}
+  @book{Shelley:1993:F,
+    author="Shelley, Mary",
+    title="Frankenstein",
+    volume="84",
+    publisher="Project Gutenberg",
+    year="1993",
+    URL="https://www.gutenberg.org/files/84/84.zip",
+  }
+
+  @book{Joyce:2003:U,
+    author="Joyce, James",
+    title="Ulysses",
+    volume="4300",
+    publisher="Project Gutenberg",
+    year="2003",
+    URL="https://www.gutenberg.org/files/4300/4300.zip",
+  }
+
+  @book{Zola:2004:G,
+    author="Zola, \'Emile",
+    title="Germinale",
+    volume="5711",
+    publisher="Project Gutenberg",
+    year="2004",
+    URL="http://www.gutenberg.org/ebooks/5711.txt.utf-8",
+  }
+\end{filecontents}
+
+\begin{document}
+
 \chapter{Example of a chapter}\label{ch:example}
   
 \section{Example of a section}\label{sec:first_example}
@@ -93,3 +140,8 @@ en attendant d'aller prendre son service, à six heures! Et elle
 restait, elle regardait la maison, de l'autre côté des jardins.  La
 porte s'ouvrit, sa curiosité s'alluma.  Mais ce ne pouvait être que la
 petite des Pierron, Lydie, qui partait pour la fosse.
+
+% Bibliography
+\bibliographystyle{plainnat}
+\bibliography{example}
+\end{document}
