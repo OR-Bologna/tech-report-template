@@ -4,7 +4,20 @@ This is the LaTeX template used for technical reports of the Operational Researc
 
 ## Usage
 
-You can use it as any other LaTeX files. Normally a pass of `pdflatex report.tex`, plus one of `bibtex report` if citations have changed, and two more of `pdflatex` to fix citations in place should be more than enough.
+Make sure to have the file `orbotech.cls` and the folder `figures` in the directory you are working. Give your document the document class
+
+```latex
+\documentclass[12pt]{orbotech}
+```
+
+And remember to specify basic data about the technical report
+
+```latex
+\reportnumber{001/2015}
+\title{Example of a Technical Report}
+\author{Fabio Bianchi, Mario Rossi, Giuseppe Verdi}
+\date{\today}
+```
 
 ## License
 
