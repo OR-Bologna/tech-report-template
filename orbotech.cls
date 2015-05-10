@@ -38,7 +38,7 @@
 % Check that all provided files actually exist:
 \IfFileExists{figures/bologna_strip.png}{}{\ClassError{orbotech}{The picture of Bologna is missing!}{It should always be in figures/bologna\_strip.png}}
 \IfFileExists{figures/twitter_logo.png}{}{\ClassError{orbotech}{The picture of Twitter's logo is missing!}{It should always be in figures/twitter\_logo.png}}
-\IfFileExists{figures/unibo_logo.png}{}{\ClassError{orbotech}{The picture of Unibo's logo is missing!}{It should always be in figures/unibo\_logo.png}}
+\IfFileExists{figures/unibo_logo.png}{}{\ClassError{orbotech}{The picture of DEI/Unibo's logo is missing!}{It should always be in figures/unibo\_logo.png}}
 
 % Provides a command to set the tech report number (which is stored in \@reportnumber)
 \newcommand{\@reportnumber}{000/0000}
@@ -91,8 +91,8 @@
   
     \begin{center}
         \vspace*{1em}
-        \includegraphics[height=6em,keepaspectratio]{./figures/unibo_logo.png}\\
-        \vspace{10em}
+        \includegraphics[height=12em,keepaspectratio]{./figures/unibo_logo.png}\\
+        \vspace{4em}
         {\sffamily\Huge \@title}\\[2em]
         {\sffamily Technical Report \@reportnumber}\\[4em]
         {\sffamily\Large \@author}\\[2em]

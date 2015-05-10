@@ -23,3 +23,4 @@ And remember to specify basic data about the technical report
 
 The source files are distributed under the GNU Public License v3.0.
 The [image](https://commons.wikimedia.org/wiki/File:Bologna-SanPetronioPiazzaMaggiore1.jpg) used in the cover page is distributed by its author under the GNU Free Documentation License v1.2 and the Creative Commons Attribution-Share Alike License v3.0.
+The logo of the University of Bologna - DEI, can be used only be the employee of the Department and exclusively in connection with their institutional activities.
