@@ -107,7 +107,7 @@
         \vfill
         \begin{tikzpicture}[overlay, remember picture]
           \fill[black,opacity=0.5] (-12,-0.4) rectangle (12,-2.4);
-          \node[color=white] at (-5,-1.4) {\sffamily {\Huge OR-Unibo}~~~\orgroupname};
+          \node[color=white] at (-5,-1.4) {\sffamily {\Huge OR-Unibo}~~~\@orgroupname};
           % Twitter logo obtained from http://about.twitter.com/
           \node at (7,-1.4) {\includegraphics[height=1.5em,keepaspectratio]{./figures/twitter_logo.png}};
           \node[color=white] at (8.75,-1.5) {\sffamily @OR\_Unibo};
